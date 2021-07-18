@@ -1,0 +1,19 @@
+create or replace function counting
+return number
+is
+ct number:=0;
+ctt number:=0;
+begin
+select count(acc_no) into ct from acct;
+dbms_output.put_line('There are '||ct||
+' accounts in the bank');
+select count(br_no) into ctt from branch;
+dbms_output.put_line('There are '||ctt||
+' branches of bank');
+return 0;
+end;
+declare
+c number:=0;
+begin
+c:=counting();
+end;

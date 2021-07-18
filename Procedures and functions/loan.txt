@@ -1,0 +1,15 @@
+create or replace procedure loan_acct
+ is
+loanno loan.loan_no%type;
+acc_no acct.acc_no%type;
+amt acct.bal%type;
+begin
+loanno:=1;
+acc_no:=1342;
+amt:=10000;
+insert into loan values (1,
+1342,10000);
+update acct set bal=amt+10000;
+dbms_output.put_line('YOUR LOAN AMOUNT HAS BEEN
+APPROVED AND CREDITED SUCCESSFULLY');
+end;

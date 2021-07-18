@@ -1,0 +1,11 @@
+create or replace procedure deposit
+(acc_no in number,amt in number)
+  is
+ total number:=0;
+ begin
+select bal into total from acct 
+where acc_no=1342;
+update acct set bal=bal+amt where acc_no
+=1342;
+Dbms_output.put_line('AMOUNT DEPOSITED SUCCESSFULLY);
+end;

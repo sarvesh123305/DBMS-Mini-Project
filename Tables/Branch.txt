@@ -1,0 +1,11 @@
+create table branch(br_name varchar2(20)
+references bank(br_name),br_no number
+primary key,br_add varchar2(20),assets number(9));
+insert into branch(br_name,br_no,br_add,assets)
+values('RAJARAMPURI',1,'KOLHAPUR',20000000);
+insert into branch(br_name,br_no,br_add,assets)
+values('SHAHUPURI',2,'KOLHAPUR',40000000);
+insert into branch(br_name,br_no,br_add,assets)
+values('VENUS CORNER',3,'KOLHAPUR',10000000);
+insert into branch(br_name,br_no,br_add,assets)
+values('SANE GURUJI VASAHAT',4,'KOLHAPUR',50000000);

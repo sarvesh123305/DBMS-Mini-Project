@@ -1,0 +1,12 @@
+create table bank(
+bank_n varchar2(20),br_name varchar2(30) 
+not null primary key,
+address varchar2(20));
+insert into bank values ('IDBI BANK',
+'RAJARAMPURI','KOLAHPUR');
+insert into bank values('IDBI BANK',
+'SHAHUPURI','KOLHAPUR');
+insert into bank values('IDBI BANK',
+'VENUS CORNER','KOLHAPUR');
+insert into bank values('IDBI BANK',
+'SANE GURUJI VASAHAT','KOLHAPUR');

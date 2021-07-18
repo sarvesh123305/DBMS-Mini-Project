@@ -1,0 +1,15 @@
+create or replace procedure withdraw(acc_no in number,
+amt in number) is
+total number:=0;
+begin
+select bal into total from acct where
+acc_no=1234;
+if amt>total then
+dbms_output.put_line('INSUFFICIENT BALANCE');
+else
+update acct set bal=bal-amt where 
+acc_no=acc_no;
+dbms_output.put_line('WITHDRAWAL DONE SUCCESSFULLY');
+end if;
+end;
+EXECUTE withdraw(1234,100000);

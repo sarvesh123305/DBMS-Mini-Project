@@ -1,0 +1,11 @@
+create table acct(cust_id number UNIQUE,acc_no
+number(15),type varchar2 (12),bal number(10),
+bank_n varchar2(15));
+insert into acct values(100,1234,'SAVINGS',
+10000,'IDBI BANK');
+insert into acct values(101,1342,'CURRENT',
+15000,'IDBI BANK');
+insert into acct values(102,1243,'CURRENT',
+5000,'IDBI BANK');
+insert into acct values(103,1324,'SAVINGS',
+1000,'IDBI BANK')

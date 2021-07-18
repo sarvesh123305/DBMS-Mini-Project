@@ -1,0 +1,11 @@
+create table customer(cust_name varchar2(20),
+phone_no number(10), address varchar2(20),
+cust_id number primary key);
+insert into customer values('AMIT',9178901238,
+'APTE NAGAR',100);
+insert into customer values('AJAY',9178168238,
+'GANGAVESH',101);
+insert into customer values('VIJAY',9927901238,
+'BONDRE NAGAR',102);
+insert into customer values('SANJAY',8768901238,
+'NR.SSC BOARD',103);

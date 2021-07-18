@@ -1,0 +1,14 @@
+create view bank_info as select * from
+customer natural join acct ;
+select * from bank_info;  
+
+
+create view cust_info as select * from
+customer natural join acct where acc_no=1243;
+select * from cust_info;
+
+
+create view bank_view as select bank_n,
+br_name,assets from
+bank natural join branch;
+select * from bank_view;
